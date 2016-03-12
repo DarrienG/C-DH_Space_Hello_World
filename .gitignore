@@ -1,0 +1,8 @@
+# output files
+*.out
+
+# linter files
+*.dat
+*.py
+lineReader
+powerlint
