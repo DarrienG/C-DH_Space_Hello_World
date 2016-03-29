@@ -16,6 +16,8 @@ class PowerTeam {
     explicit PowerTeam(double voltage);
     double getVoltage();
     void setVoltage(double voltage);
+
+    PowerTeam operator+(const PowerTeam& toAdd);
 };
 
 #endif  // POWERTEAM_H_

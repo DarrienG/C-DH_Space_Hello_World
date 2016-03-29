@@ -41,3 +41,20 @@ double PowerTeam::getVoltage() {
 void PowerTeam::setVoltage(double voltage) {
     mVoltage = voltage;
 }
+
+/**
+ * Simply add the values within two PowerTeam variables,
+ * then store it in a new PowerTeam var, and return it.
+ *
+ * @param toAdd The other PowerTeam to add to the current one
+ * @return PowerTeam new variable made with addition of two other PowerTeams
+ */
+PowerTeam operator+(const PowerTeam& toAdd) {
+    PowerTeam* toReturn = new PowerTeam();
+
+    int value = this->mVoltage + toAdd.getVoltage();
+
+    toReturn.setVoltage(value);
+
+    return toReturn;
+}
