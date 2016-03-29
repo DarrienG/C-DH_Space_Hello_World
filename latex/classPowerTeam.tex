@@ -8,9 +8,11 @@
 \item 
 \hyperlink{classPowerTeam_a689763ee90d019c1c559c80f138a2963}{Power\-Team} (double voltage)
 \item 
-double \hyperlink{classPowerTeam_ac0acadf6a7d5d128becb60c3d2fec7b0}{get\-Voltage} ()
+double \hyperlink{classPowerTeam_afc23653696e19a0c47ad61c480995a0f}{get\-Voltage} () const 
 \item 
 void \hyperlink{classPowerTeam_a669694b1bb5681b01f06a0bb0bd4d889}{set\-Voltage} (double voltage)
+\item 
+\hyperlink{classPowerTeam}{Power\-Team} \hyperlink{classPowerTeam_a9165ca8e11443510aa39846143df37d4}{operator+} (const \hyperlink{classPowerTeam}{Power\-Team} \&to\-Add)
 \end{DoxyCompactItemize}
 
 
@@ -39,17 +41,34 @@ Public constructor. Takes a voltage, and sets the data member m\-Voltage with it
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classPowerTeam_ac0acadf6a7d5d128becb60c3d2fec7b0}{\index{Power\-Team@{Power\-Team}!get\-Voltage@{get\-Voltage}}
+\hypertarget{classPowerTeam_afc23653696e19a0c47ad61c480995a0f}{\index{Power\-Team@{Power\-Team}!get\-Voltage@{get\-Voltage}}
 \index{get\-Voltage@{get\-Voltage}!PowerTeam@{Power\-Team}}
 \subsubsection[{get\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}double Power\-Team\-::get\-Voltage (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classPowerTeam_ac0acadf6a7d5d128becb60c3d2fec7b0}
+) const}}\label{classPowerTeam_afc23653696e19a0c47ad61c480995a0f}
 Basic getter. Returns stored voltage.
 
 \begin{DoxyReturn}{Returns}
 double Stored voltage. 
+\end{DoxyReturn}
+\hypertarget{classPowerTeam_a9165ca8e11443510aa39846143df37d4}{\index{Power\-Team@{Power\-Team}!operator+@{operator+}}
+\index{operator+@{operator+}!PowerTeam@{Power\-Team}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Power\-Team} Power\-Team\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Power\-Team} \&}]{to\-Add}
+\end{DoxyParamCaption}
+)}}\label{classPowerTeam_a9165ca8e11443510aa39846143df37d4}
+Simply add the values within two \hyperlink{classPowerTeam}{Power\-Team} variables, then store it in a new \hyperlink{classPowerTeam}{Power\-Team} var, and return it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\-Add} & The other \hyperlink{classPowerTeam}{Power\-Team} to add to the current one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classPowerTeam}{Power\-Team} new variable made with addition of two other Power\-Teams 
 \end{DoxyReturn}
 \hypertarget{classPowerTeam_a669694b1bb5681b01f06a0bb0bd4d889}{\index{Power\-Team@{Power\-Team}!set\-Voltage@{set\-Voltage}}
 \index{set\-Voltage@{set\-Voltage}!PowerTeam@{Power\-Team}}

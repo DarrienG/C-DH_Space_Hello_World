@@ -29,7 +29,7 @@ PowerTeam::PowerTeam(double voltage) {
  *
  * @return double Stored voltage.
  */
-double PowerTeam::getVoltage() {
+double PowerTeam::getVoltage() const {
     return mVoltage;
 }
 
@@ -49,12 +49,9 @@ void PowerTeam::setVoltage(double voltage) {
  * @param toAdd The other PowerTeam to add to the current one
  * @return PowerTeam new variable made with addition of two other PowerTeams
  */
-PowerTeam operator+(const PowerTeam& toAdd) {
-    PowerTeam* toReturn = new PowerTeam();
-
-    int value = this->mVoltage + toAdd.getVoltage();
-
+PowerTeam PowerTeam::operator+(const PowerTeam& toAdd) {
+    PowerTeam toReturn;
+    double value = mVoltage + toAdd.getVoltage();
     toReturn.setVoltage(value);
-
     return toReturn;
 }

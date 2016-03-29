@@ -95,10 +95,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae8550db8d93ee0e0b0c93a1031b390e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a689763ee90d019c1c559c80f138a2963"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPowerTeam.html#a689763ee90d019c1c559c80f138a2963">PowerTeam</a> (double voltage)</td></tr>
 <tr class="separator:a689763ee90d019c1c559c80f138a2963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0acadf6a7d5d128becb60c3d2fec7b0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPowerTeam.html#ac0acadf6a7d5d128becb60c3d2fec7b0">getVoltage</a> ()</td></tr>
-<tr class="separator:ac0acadf6a7d5d128becb60c3d2fec7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc23653696e19a0c47ad61c480995a0f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPowerTeam.html#afc23653696e19a0c47ad61c480995a0f">getVoltage</a> () const </td></tr>
+<tr class="separator:afc23653696e19a0c47ad61c480995a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a669694b1bb5681b01f06a0bb0bd4d889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPowerTeam.html#a669694b1bb5681b01f06a0bb0bd4d889">setVoltage</a> (double voltage)</td></tr>
 <tr class="separator:a669694b1bb5681b01f06a0bb0bd4d889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9165ca8e11443510aa39846143df37d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPowerTeam.html">PowerTeam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPowerTeam.html#a9165ca8e11443510aa39846143df37d4">operator+</a> (const <a class="el" href="classPowerTeam.html">PowerTeam</a> &amp;toAdd)</td></tr>
+<tr class="separator:a9165ca8e11443510aa39846143df37d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae8550db8d93ee0e0b0c93a1031b390e4"></a>
@@ -149,7 +151,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac0acadf6a7d5d128becb60c3d2fec7b0"></a>
+<a class="anchor" id="afc23653696e19a0c47ad61c480995a0f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -157,12 +159,36 @@ Public Member Functions</h2></td></tr>
           <td class="memname">double PowerTeam::getVoltage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Basic getter. Returns stored voltage.</p>
 <dl class="section return"><dt>Returns</dt><dd>double Stored voltage. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9165ca8e11443510aa39846143df37d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPowerTeam.html">PowerTeam</a> PowerTeam::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classPowerTeam.html">PowerTeam</a> &amp;&#160;</td>
+          <td class="paramname"><em>toAdd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Simply add the values within two <a class="el" href="classPowerTeam.html">PowerTeam</a> variables, then store it in a new <a class="el" href="classPowerTeam.html">PowerTeam</a> var, and return it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toAdd</td><td>The other <a class="el" href="classPowerTeam.html">PowerTeam</a> to add to the current one </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classPowerTeam.html">PowerTeam</a> new variable made with addition of two other PowerTeams </dd></dl>
 
 </div>
 </div>
@@ -196,7 +222,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 12 2016 09:26:35 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 29 2016 19:03:25 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
