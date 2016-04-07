@@ -7,6 +7,7 @@
 #include "PowerCell.h"
 
 #include <iostream>
+#include <vector>
 
 using std::vector;
 using std::cout;
@@ -19,8 +20,7 @@ using std::endl;
 PowerCell::PowerCell(vector<PowerTeam> powerCell) {
     mPowerCell = powerCell;
     mTotalVoltage = 0;
-    for (int i = 0; i < mPowerCell.size(); ++i)
-    {
+    for (int i = 0; i < mPowerCell.size(); ++i) {
         mTotalVoltage += mPowerCell[i].getVoltage();
     }
 }
@@ -39,8 +39,7 @@ double PowerCell::getTotalVoltage() {
  * too high.
  */
 void PowerCell::drawPower(double power) {
-    if (power > mTotalVoltage)
-    {
+    if (power > mTotalVoltage) {
         cout << "Power draw too high, cannot draw: " << power << " with only " \
         << mTotalVoltage << " power left." << endl;
         return;
@@ -48,11 +47,9 @@ void PowerCell::drawPower(double power) {
 
     // While we still have power, and we haven't moved past our final cell,
     // keep drawing power from each cell.
-    for (int i = 0; power != 0; ++i)
-    {
+    for (int i = 0; power != 0; ++i) {
         double powerDrawn;
-        if (power > mPowerCell[i].getVoltage())
-        {
+        if (power > mPowerCell[i].getVoltage()) {
             powerDrawn = mPowerCell[i].getVoltage();
         } else {
             powerDrawn = power;
@@ -66,8 +63,7 @@ void PowerCell::drawPower(double power) {
 void PowerCell::printCell() {
     cout << "Total power left: " << mTotalVoltage << endl;
     cout << "Power in each cell: " << endl;
-    for (int i = 0; i < mPowerCell.size(); ++i)
-    {
+    for (int i = 0; i < mPowerCell.size(); ++i) {
         cout << "Battery " << i + 1 << ": " << mPowerCell[i].getVoltage() \
         << endl;
     }
