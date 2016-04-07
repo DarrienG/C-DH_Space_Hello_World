@@ -36,5 +36,7 @@ void powerUp(vector<PowerTeam> *vec, int numItems) {
 }
 
 void drainCell(PowerCell *battery) {
-    (*battery).drawPower(8);
+    for (size_t i = 0; i < 4; i++) {
+        (*battery).drawPower(8);
+    }
 }

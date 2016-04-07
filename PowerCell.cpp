@@ -41,8 +41,9 @@ double PowerCell::getTotalVoltage() {
 void PowerCell::drawPower(double power) {
     if (power > mTotalVoltage)
     {
-        cout << "Power draw too high, cannot draw: " << power << "with only " \
+        cout << "Power draw too high, cannot draw: " << power << " with only " \
         << mTotalVoltage << " power left." << endl;
+        return;
     }
 
     // While we still have power, and we haven't moved past our final cell,
