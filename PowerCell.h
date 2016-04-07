@@ -8,19 +8,21 @@
 #define POWER_CELL_H_ 
 
 #include "PowerTeam.h"
+#include <vector>
+#include <string>
 
 class PowerCell
 {
  private:
     std::vector<PowerTeam> mPowerCell;
-    int mTotalVoltage;
+    double mTotalVoltage;
+    double mMaxVoltage;
 
  public:
     PowerCell(std::vector<PowerTeam> powerCell);
-    int getTotalVoltage();
-    void recharge(int power);
-    
-    
+    double getTotalVoltage();
+	void drawPower(double power);    
+	void printCell();    
 };
 
 #endif // POWER_CELL_H_

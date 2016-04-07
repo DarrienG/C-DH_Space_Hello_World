@@ -19,7 +19,7 @@ int main(int argc, char const *argv[]) {
     OtherTeam backupOther(backupPower.getVoltage());
 
     cout << "power's power: " << power.getVoltage() << endl;
-    cout << "other's conveted power: " << other.getConvertedVal() << endl;
+    cout << "other's converted power: " << other.getConvertedVal() << endl;
     cout << "backupPower's power: " << backupPower.getVoltage() << endl;
     cout << "backupOther's power: " << backupOther.getConvertedVal() << endl;
 
