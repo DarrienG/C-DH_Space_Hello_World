@@ -60,6 +60,9 @@ void PowerCell::drawPower(double power) {
     }
 }
 
+/*!
+ * Prints the total power in the cell, and the power in each specific cell.
+ */
 void PowerCell::printCell() {
     cout << "Total power left: " << mTotalVoltage << endl;
     cout << "Power in each cell: " << endl;

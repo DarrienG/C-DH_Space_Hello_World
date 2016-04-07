@@ -28,6 +28,9 @@ int main(int argc, char const *argv[]) {
     return 0;
 }
 
+/*!
+ * Helper method. Fills vector with PowerTeam objects.
+ */
 void powerUp(vector<PowerTeam> *vec, int numItems) {
     for (size_t i = 0; i < numItems; i++) {
         PowerTeam tmpTeam(5);
@@ -35,6 +38,9 @@ void powerUp(vector<PowerTeam> *vec, int numItems) {
     }
 }
 
+/*!
+ * Helper method. Drains power from battery.
+ */
 void drainCell(PowerCell *battery) {
     for (size_t i = 0; i < 4; i++) {
         (*battery).drawPower(8);
