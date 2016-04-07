@@ -6,22 +6,37 @@
 
 #include "PowerTeam.h"
 #include "OtherTeam.h"
+#include "PowerCell.h"
+
 #include <iostream>
+#include <vector>
 
 using std::cout;
 using std::endl;
+using std::vector;
+
+void powerUp(vector<PowerTeam> *vec, int numItems);
+void drainCell(PowerCell *battery);
 
 int main(int argc, char const *argv[]) {
-    PowerTeam power(5.55);
-    PowerTeam backupPower;
-    backupPower.setVoltage(3.141592653589793238);
-    OtherTeam other(power);
-    OtherTeam backupOther(backupPower.getVoltage());
-
-    cout << "power's power: " << power.getVoltage() << endl;
-    cout << "other's conveted power: " << other.getConvertedVal() << endl;
-    cout << "backupPower's power: " << backupPower.getVoltage() << endl;
-    cout << "backupOther's power: " << backupOther.getConvertedVal() << endl;
-
+    vector<PowerTeam> powerVec;
+    powerUp(&powerVec, 4);
+    PowerCell battery(powerVec);
+    battery.printCell();
+    drainCell(&battery);
+    battery.printCell();
     return 0;
+}
+
+void powerUp(vector<PowerTeam> *vec, int numItems) {
+    for (size_t i = 0; i < numItems; i++) {
+        PowerTeam tmpTeam(5);
+        (*vec).push_back(tmpTeam);
+    }
+}
+
+void drainCell(PowerCell *battery) {
+    for (size_t i = 0; i < 4; i++) {
+        (*battery).drawPower(8);
+    }
 }
