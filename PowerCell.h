@@ -16,11 +16,15 @@ class PowerCell {
     std::vector<PowerTeam> mPowerCell;
     double mTotalVoltage;
     double mMaxVoltage;
+    double mCellVoltage;
 
  public:
     explicit PowerCell(std::vector<PowerTeam> powerCell);
     double getTotalVoltage();
+    double getMaxVoltage();
+    double getCellVoltage();
     void drawPower(double power);
+    void rechargeCell(double power);
     void printCell();
 };
 

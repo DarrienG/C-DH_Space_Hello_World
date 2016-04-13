@@ -1,5 +1,7 @@
 # output files
 *.out
+*.o
+*.gch
 
 # linter files
 *.dat

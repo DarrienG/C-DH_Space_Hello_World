@@ -9,14 +9,13 @@
 
 class PowerTeam {
  private:
-    double mVoltage = -1;
+    double mVoltage;
 
  public:
     PowerTeam();
     explicit PowerTeam(double voltage);
     double getVoltage() const;
     void setVoltage(double voltage);
-
     PowerTeam operator+(const PowerTeam& toAdd);
 };
 
