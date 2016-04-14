@@ -51,7 +51,7 @@ void drainCell(PowerCell *battery) {
 }
 
 /*
- * Helper method. Recharges battery.
+ * Not helper method. Recharges battery.
  */
 void rechargeCell(PowerCell *battery) {
      for (size_t i = 0; i < 4; i++) {
