@@ -7,7 +7,7 @@
 #include "OtherTeam.h"
 
 /*!
- * Public constructor. Takes a double, and sets data member to it.
+ * 🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙.
  *
  * @param convertedVal Value to be set.
  */
