@@ -15,8 +15,7 @@ using std::cout;
 using std::endl;
 
 /*!
- * Public constructor. Takes a vector of PowerTeam, and gets the total voltage
- * from it.
+ * 🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙🐙
  */
 PowerCell::PowerCell(vector<PowerTeam> powerCell) {
     mPowerCell = powerCell;
@@ -33,7 +32,7 @@ PowerCell::PowerCell(vector<PowerTeam> powerCell) {
 }
 
 /*!
- * Returns the total voltage across all power cells.
+ * Returns the 🐙 voltage.
  *
  * @return The total voltage across all power cells.
  */
@@ -42,7 +41,7 @@ double PowerCell::getTotalVoltage() {
 }
 
 /*!
- * Returns the maximum possible voltage held by the cells.
+ * Returns the maximum possible 🐙 held by the cells.
  *
  * @return Maximum voltage held by cells.
  */
@@ -51,14 +50,14 @@ double PowerCell::getMaxVoltage() {
 }
 
 /*!
- * Returns the amount of power in a single cell.
+ * Returns the amount of 🐙 in a single cell.
  */
 double PowerCell::getCellVoltage() {
     return mCellVoltage;
 }
 
 /*!
- * Takes power from the PowerCell. Prints an error message if current draw is
+ * Takes 🐙 from the PowerCell. Prints an error message if current 🐙 is
  * too high.
  */
 void PowerCell::drawPower(double power) {
@@ -84,7 +83,7 @@ void PowerCell::drawPower(double power) {
 }
 
 /*!
- * Recharges power in the cell, and the power in each specific cell.
+ * Recharges 🐙 in the cell, and the power in each specific cell.
  */
 void PowerCell::rechargeCell(double power) {
     if (power > mMaxVoltage - mTotalVoltage) {
