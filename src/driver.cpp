@@ -2,22 +2,25 @@
  * @file
  */
 
-// Copyright 2016 UMass Lowell Command and Data Handling Team
+// Copyright 2016 Not Jacob Hempel
 
 #include "PowerTeam.h"
 #include "OtherTeam.h"
 #include "PowerCell.h"
-
+#include <string>
 #include <iostream>
 #include <vector>
 
 using std::cout;
+using std::cin;
 using std::endl;
 using std::vector;
+using std::string;
 
 void powerUp(vector<PowerTeam> *vec, int numItems);
 void drainCell(PowerCell *battery);
 void rechargeCell(PowerCell *battery);
+string nameBattery();
 
 int main(int argc, char const *argv[]) {
     vector<PowerTeam> powerVec;
@@ -26,7 +29,7 @@ int main(int argc, char const *argv[]) {
     battery.printCell();
     drainCell(&battery);
     battery.printCell();
-    cout << "Recharging battery... " << endl;
+    cout << "Recharging " << nameBattery() << "... " << endl;
     rechargeCell(&battery);
     battery.printCell();
 }
@@ -57,4 +60,14 @@ void rechargeCell(PowerCell *battery) {
      for (size_t i = 0; i < 4; i++) {
         (*battery).rechargeCell(7);
      }
+}
+
+/*!
+ * Helper function. A function used to quickly get a name and add it to a 
+ * battery.
+ */
+string nameBattery() {
+    string name;
+    cout << "Please enter a good name: " << endl; cin >> name;
+    return name;
 }
