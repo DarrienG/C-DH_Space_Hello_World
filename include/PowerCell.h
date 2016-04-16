@@ -4,8 +4,8 @@
 
 // Copyright 2016 UMass Lowell Command and Data Handling Team
 
-#ifndef POWERCELL_H_
-#define POWERCELL_H_
+#ifndef INCLUDE_POWERCELL_H_
+#define INCLUDE_POWERCELL_H_
 
 #include "PowerTeam.h"
 #include <vector>
@@ -28,4 +28,4 @@ class PowerCell {
     void printCell();
 };
 
-#endif  // POWERCELL_H_
+#endif  // INCLUDE_POWERCELL_H_

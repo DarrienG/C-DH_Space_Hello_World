@@ -4,8 +4,8 @@
 
 // Copyright 2016 UMass Lowell Command and Data Handling Team
 
-#ifndef POWERTEAM_H_
-#define POWERTEAM_H_
+#ifndef INCLUDE_POWERTEAM_H_
+#define INCLUDE_POWERTEAM_H_
 
 class PowerTeam {
  private:
@@ -19,4 +19,4 @@ class PowerTeam {
     PowerTeam operator+(const PowerTeam& toAdd);
 };
 
-#endif  // POWERTEAM_H_
+#endif  // INCLUDE_POWERTEAM_H_
