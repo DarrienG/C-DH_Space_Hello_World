@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/DarrienG/C-DH_Space_Hello_World.svg?branch=master)](https://travis-ci.org/DarrienG/C-DH_Space_Hello_World)
+
 Two simple classes, PowerTeam, and OtherTeam. Both have getters and setters.
 
 This is a basic example used to illustrate tools used by the Command and Data
