@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/DarrienG/C-DH_Space_Hello_World.svg?branch=master)](https://travis-ci.org/DarrienG/C-DH_Space_Hello_World)
+[![Build Status](https://travis-ci.org/DarrienG/C-DH_Space_Hello_World.svg?branch=feature/dglasser/45_name_battery)](https://travis-ci.org/DarrienG/C-DH_Space_Hello_World)
 
 Two simple classes, PowerTeam, and OtherTeam. Both have getters and setters.
 
