@@ -2,7 +2,7 @@
  * @file
  */
 
-// Copyright 2016 Not Jacob Hempel
+// Copyright 2016 UMass Lowell Command and Data Handling Team
 
 #include "PowerTeam.h"
 #include "OtherTeam.h"
@@ -23,6 +23,7 @@ void rechargeCell(PowerCell *battery);
 string nameBattery();
 
 int main(int argc, char const *argv[]) {
+    cout << "This is Assignment 5 for Cubesat\n";
     vector<PowerTeam> powerVec;
     powerUp(&powerVec, 4);
     PowerCell battery(powerVec);
@@ -63,7 +64,7 @@ void rechargeCell(PowerCell *battery) {
 }
 
 /*!
- * Helper function. A function used to quickly get a name and add it to a 
+ * Helper function. A function used to quickly get a name and add it to a
  * battery.
  */
 string nameBattery() {
