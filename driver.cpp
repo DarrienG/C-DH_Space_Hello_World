@@ -2,14 +2,14 @@
  * @file
  */
 
-// Copyright 2016 UMass Lowell Command and Data Handling Team
+// Copyright 2016 David Connolly
 
 #include "PowerTeam.h"
 #include "OtherTeam.h"
 #include "PowerCell.h"
 #include <string>
 #include <iostream>
-#include <vector>
+//#include <vector>
 
 using std::cout;
 using std::cin;
@@ -69,6 +69,6 @@ void rechargeCell(PowerCell *battery) {
  */
 string nameBattery() {
     string name;
-    cout << "Please enter a good name: " << endl; cin >> name;
+    cout << "Please enter a good name: " << endl; cin << name;
     return name;
 }
